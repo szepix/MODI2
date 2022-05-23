@@ -9,7 +9,7 @@ f = @(u,y) (W_training_D(1)+W_training_D(5)+W_training_D(9))*u +...
 
 G = linspace(-1,1.5, 1000).';
 for i=1:numel(G)
-sol = fsolve(@(y)f(G(i),y),[1,1]);
+sol = fsolve(@(y)f(G(i),y),[0,1]);
 x(i,:) = sol;
 end 
 

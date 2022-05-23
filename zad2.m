@@ -90,6 +90,7 @@ Y_tr(:)=trainingData_D(:,2);
 U_val(:)=validationData_D(:,1);
 Y_val(:)=validationData_D(:,2);
 
+
 %bez rekurencji
     if N==1
         for k=N+1:P
